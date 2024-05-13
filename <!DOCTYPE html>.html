@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<form action="/process-form-data" method="post">
+  <div>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="usuario_nome" />
+  </div>
+  <label for="nomepai">Nome do pai:</label>
+    <input type="text" id="nomepai" name="usuario_nomepai" />
+  <div>
+    <label for="nome_mae">Nome da Mãe:</label>
+    <input type="text" id="nome_mae" name="usuario_nome_mae" />
+  </div>
+  <div>
+    <label for="cpf">CPF:</label>
+    <input type="number" id="cpf" name="usuario_cpf" />
+  </div>
+  <div>
+    <label for="rg">RG:</label>
+    <input type="number" id="rg" name="usuario_rg" />
+  </div>
+  <div>
+    <label for="telefone">Número de Telefone:</label>
+    <input type="number" id="telefone" name="usuario_telefone" />
+  </div>
+  <div>
+    <label for="renda">Renda:</label>
+    <input type="number" id="renda" name="usuario_renda" />
+  </div>
+  <div>
+    <label for="datnasc">Data de nascimento:</label>
+    <input type="date" id="datnasc" name="usuario_datnasc" />
+  </div>
+  <div>
+   <label>Gênero:</label>
+    Masculino<input type="checkbox" id="masculino" name="usuario_genero" value="Masculino">
+    <label for="masculino"></label>
+    Feminino<input type="checkbox" id="feminino" name="usuario_genero" value="Feminino">
+    <label for="feminino"></label>
+    </div>
+  <div>
+    <label for="endereco">Endereço:</label>
+    <input type="text" id="endereco" name="usuario_endereco"></textarea>
+  </div>
+  <div class="button">
+    <button type="cancel">Cancelar</button><button type="submit">Salvar</button>
+  </div>
+  
+  
+</form>
+</body>
+</html>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+form {
+  background-color: #fff;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+button[type="cancel"] {
+  background-color: #FF0000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+</style>
